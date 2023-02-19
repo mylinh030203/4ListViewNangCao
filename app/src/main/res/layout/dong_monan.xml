@@ -1,22 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
+
     <ImageView
-        android:layout_gravity="center"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
         android:id="@+id/imgviewHinhmonan"
-        android:layout_margin="5dp"/>
-    <TextView
+        android:layout_width="295dp"
+        android:layout_height="232dp"
         android:layout_gravity="center"
-        android:text="Tên Món Ăn"
+        android:layout_margin="5dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/tviewMonan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
         android:id="@+id/tviewMonan"
-        android:textSize="30sp"
+        android:layout_width="289dp"
+        android:layout_height="53dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:text="Tên Món Ăn"
         android:textColor="#f20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgviewHinhmonan" />
 
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
